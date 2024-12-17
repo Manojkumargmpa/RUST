@@ -35,4 +35,30 @@
 
 ## The unit as a return type
 1. A unit is an empty typles,a tuple without values.
-2. 
+2. ```bash
+    let tup=();
+    ```
+3. if you see the tyope of tup in the above code,its `()` which is same as the value(empty tuple).
+   i.e
+    ```bash
+    let result:()=emptyfun();
+    fn emptyfun(){
+    
+
+    }
+    ```
+4. Thing here is that that tup is same as what the function returns when no return type is mentioned.
+5. we can provide void by keeping `->()` but thats not needed.
+
+## Blocks in functions
+1. ```bash
+    fn main(){
+        let multi=34;
+        let value_returned_by_blck={
+        let value=3;
+        value*multi
+        };
+    }
+    ```
+2. `{}` gives us an isolated scope/block.
+3. **Just like how last line in the function works as returned value,even for block it works the same way**
